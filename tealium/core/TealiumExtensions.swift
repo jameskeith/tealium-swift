@@ -82,7 +82,7 @@ extension Date {
     }
 
     var unixTime: String {
-        let time = Int(self.timeIntervalSince1970 * 1000)
+        let time = Int64(self.timeIntervalSince1970 * 1000)
         
         return String(describing: time)
     }
